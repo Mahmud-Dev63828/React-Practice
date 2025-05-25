@@ -1,7 +1,12 @@
 import React from "react";
+import Counter from "./Components/Counter";
 
 const App = () => {
-  return <div className="bg-amber-400">app</div>;
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
 };
 
 export default App;

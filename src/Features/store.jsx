@@ -1,7 +1,7 @@
-import React from "react";
-
-const store = () => {
-  return <div>store</div>;
-};
-
-export default store;
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "./slice/counterSlice";
+export default configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
